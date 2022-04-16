@@ -1,0 +1,11 @@
+.img-container{
+    background-image: url("https://i.ibb.co/WzngJdb/wedding-couple-france.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+}
+.img-container h2{
+    padding-top: 400px;
+    padding-left: 50px;
+}
