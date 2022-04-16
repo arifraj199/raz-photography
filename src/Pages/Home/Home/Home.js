@@ -1,4 +1,5 @@
 import React from 'react';
+import Services from '../Services/Services';
 import './Home.css';
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
                 <p>Provide Best Service</p>
                 <button className='btn btn-primary'>Know More</button>
             </div>
+            <Services></Services>
         </div>
     );
 };
