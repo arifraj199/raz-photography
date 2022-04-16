@@ -1,27 +1,57 @@
 import React from "react";
 import { Form } from "react-bootstrap";
-import { Link } from "react-router-dom";
-import img from '../../../images/google.png';
+import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
+import { Link, useNavigate } from "react-router-dom";
+import auth from "../../../firebase.init";
+import img from "../../../images/google.png";
 
 const Signup = () => {
+  const [
+    createUserWithEmailAndPassword,
+    user,
+    loading,
+    error
+  ] = useCreateUserWithEmailAndPassword(auth);
+
+  const navigate = useNavigate();
+
+  if(user){
+      console.log(user);
+      navigate('/');
+  }
+
+  const handleSignupForm = event => {
+    event.preventDefault();
+
+    const email = event.target.email.value;
+    const password = event.target.password.value;
+    const confirmPassword = event.target.confirmPassword.value;
+
+    console.log(email,password,confirmPassword)
+
+    if (password === confirmPassword) {
+      createUserWithEmailAndPassword(email, password);
+    }
+  };
+
   return (
     <div>
       <div className="form-container">
         <h2 className="text-center">Sign Up</h2>
-        <Form>
+        <Form onSubmit={handleSignupForm}>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Email</Form.Label>
-            <Form.Control type="email" />
+            <Form.Control type="email" name="email" />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicPassword">
             <Form.Label>Password</Form.Label>
-            <Form.Control type="password" />
+            <Form.Control type="password" name="password" />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicPassword">
             <Form.Label>Confirm Password</Form.Label>
-            <Form.Control type="password" />
+            <Form.Control type="password" name="confirmPassword" />
           </Form.Group>
 
           <button className="w-100 text-black fs-5 border-0">Sign Up</button>
