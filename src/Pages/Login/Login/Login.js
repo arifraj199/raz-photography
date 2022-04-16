@@ -1,6 +1,6 @@
 import React from "react";
 import { Form } from "react-bootstrap";
-import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
+import { useSignInWithEmailAndPassword, useSignInWithGoogle } from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../../firebase.init";
 import img from "../../../images/google.png";
@@ -16,6 +16,8 @@ const Login = () => {
     error
   ] = useSignInWithEmailAndPassword(auth);
 
+  const [signInWithGoogle, user1, loading1, error1] = useSignInWithGoogle(auth);
+
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -25,7 +27,7 @@ const Login = () => {
     return <LoadingSpinner></LoadingSpinner>
 }
 
-  if(user){
+  if(user || user1){
     navigate(from, { replace: true });
   }
 
@@ -45,15 +47,15 @@ const Login = () => {
       <Form onSubmit={handleLoginForm}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email</Form.Label>
-          <Form.Control type="email" name="email" />
+          <Form.Control type="email" name="email" required />
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicPassword">
           <Form.Label>Password</Form.Label>
           <Form.Control
-            
             type="password"
             name="password"
+            required
           />
         </Form.Group>
         <button className="w-100 text-black fs-5 border-0">Login</button>
@@ -77,11 +79,11 @@ const Login = () => {
         </div>
       </div>
 
-      <div className="google-container">
-        <Link className="link-container" to="/signup">
-          <img src={img} alt="" />
-          <p className="mt-3">Continue With Google</p>
-        </Link>
+      <div className="google-container w-100">
+        <button onClick={()=> signInWithGoogle()} className="link-container">
+            <img src={img} alt="" />
+            <p className="mt-3">Continue With Google</p>
+        </button>
       </div>
     </div>
   );
