@@ -4,6 +4,7 @@ import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../../firebase.init";
 import img from "../../../images/google.png";
+import LoadingSpinner from "../../Shared/LoadingSpinner/LoadingSpinner";
 import "./Login.css";
 
 const Login = () => {
@@ -19,6 +20,10 @@ const Login = () => {
   const navigate = useNavigate();
 
   let from = location.state?.from?.pathname || "/";
+
+  if(loading){
+    return <LoadingSpinner></LoadingSpinner>
+}
 
   if(user){
     navigate(from, { replace: true });

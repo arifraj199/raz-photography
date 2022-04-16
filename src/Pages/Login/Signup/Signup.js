@@ -15,9 +15,9 @@ const Signup = () => {
 
   const navigate = useNavigate();
 
-  if(user){
-      console.log(user);
-      navigate('/');
+  if (user) {
+    console.log(user);
+    navigate("/");
   }
 
   const handleSignupForm = event => {
@@ -27,7 +27,7 @@ const Signup = () => {
     const password = event.target.password.value;
     const confirmPassword = event.target.confirmPassword.value;
 
-    console.log(email,password,confirmPassword)
+    console.log(email, password, confirmPassword);
 
     if (password === confirmPassword) {
       createUserWithEmailAndPassword(email, password);
