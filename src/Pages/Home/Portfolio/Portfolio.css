@@ -1,7 +1,6 @@
 .portfolio-container{
     background-color: rgb(165, 164, 159);
     margin-top: 50px;
-    /* margin-bottom: 100px; */
     padding-top: 50px;
     padding-bottom: 80px;
 }
@@ -29,4 +28,25 @@
 }
 .img-portfolio img:hover{
     transform: scale(1.1);
+}
+.img-portfolio h3{
+    margin-top: 15px;
+}
+
+/* Responsive for Mobile Device */
+@media only screen and (max-width:688px){
+    .portfolio{
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        margin: 40px 10px;
+    }
+    .img-portfolio img{
+        height: 200px;
+        
+    }
+    .img-portfolio h3{
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    
 }

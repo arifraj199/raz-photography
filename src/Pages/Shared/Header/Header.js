@@ -16,7 +16,9 @@ const Header = () => {
       <nav>
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
           <Container>
-            <Navbar.Brand as={Link} to="/">ENGROSSING PHOTOGRAPHY</Navbar.Brand>
+            <Navbar.Brand as={Link} to="/">
+              ENGROSSING PHOTOGRAPHY
+              </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="ms-auto">
@@ -28,7 +30,7 @@ const Header = () => {
                   About
                 </Nav.Link>
                 {user
-                  ? <button className="btn btn-link text-decoration-none text-light" onClick={handleSignout}>Sign Out</button>
+                  ? <button className="btn btn-link text-decoration-none text-light navbar-nav" onClick={handleSignout}>Sign Out</button>
                   : <Nav.Link as={Link} to="/login">
                       Login
                     </Nav.Link>}

@@ -3,7 +3,7 @@ import { Button, Form } from "react-bootstrap";
 
 const Checkout = () => {
   return (
-    <div>
+    <div className="mb-5">
       <h2 className="text-center mt-5">Give Your Information</h2>
       <Form className="w-50 mx-auto">
         <Form.Group className="mb-3" controlId="formBasicEmail">

@@ -11,5 +11,21 @@
 }
 .getReady-container button {
     width: 25%;
-    
+}
+
+/* Responsive for Mobile Device */
+@media only screen and (max-width:688px) {
+    .getReady-container{
+        padding: 20px;
+        margin: 20px auto;
+    }
+    .getReady-container p{
+        width: 100%;
+        margin: 10px auto;
+        font-size: 15px!important;
+    }
+    .getReady-container button {
+        width: 50%;
+        font-size: 18px!important;
+    }
 }
