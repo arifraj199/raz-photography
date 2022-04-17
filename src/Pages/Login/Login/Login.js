@@ -20,12 +20,17 @@ const Login = () => {
 
   const location = useLocation();
   const navigate = useNavigate();
+  let errorElement;
 
   let from = location.state?.from?.pathname || "/";
 
-  if(loading){
+  if(loading || loading1){
     return <LoadingSpinner></LoadingSpinner>
 }
+
+  if(error || error1){
+    errorElement = <p>{error?.message || error1?.message}</p>
+  }
 
   if(user || user1){
     navigate(from, { replace: true });
@@ -68,7 +73,7 @@ const Login = () => {
           </span>
         </small>
       </p>
-
+      <p className="text-danger">{errorElement}</p>
       <div className="divider">
         <div>
           <hr />

@@ -11,20 +11,24 @@ const Signup = () => {
     user,
     loading,
     error
-  ] = useCreateUserWithEmailAndPassword(auth);
+  ] = useCreateUserWithEmailAndPassword(auth,{sendEmailVerification:true});
 
   const [signInWithGoogle, user1, loading1, error1] = useSignInWithGoogle(auth);
 
   const navigate = useNavigate();
+  let errorElement;
 
   if (user || user1) {
     console.log(user);
     navigate("/");
   }
 
+  if(error || error1){
+    errorElement = <p>{error?.message} {error1?.message}</p> 
+  }
+
   const handleSignupForm = event => {
     event.preventDefault();
-
     const email = event.target.email.value;
     const password = event.target.password.value;
     const confirmPassword = event.target.confirmPassword.value;
@@ -33,6 +37,8 @@ const Signup = () => {
 
     if (password === confirmPassword) {
       createUserWithEmailAndPassword(email, password);
+    }else{
+      alert("password didn't match");
     }
   };
 
@@ -58,6 +64,7 @@ const Signup = () => {
 
           <button className="w-100 text-black fs-5 border-0">Sign Up</button>
         </Form>
+
         <p className="text-center mt-2">
           <small>
             Already Have an Account?{" "}
@@ -66,6 +73,7 @@ const Signup = () => {
             </span>
           </small>
         </p>
+        <p className="text-danger">{errorElement}</p>
 
         <div className="divider">
           <div>
