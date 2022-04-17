@@ -5,6 +5,9 @@
     padding-top: 50px;
     padding-bottom: 80px;
 }
+.portfolio-container h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 .portfolio{
     display: grid;

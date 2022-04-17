@@ -1,0 +1,15 @@
+.getReady-container{
+    background-color: rgb(250, 248, 242);
+    padding: 100px;
+}
+.getReady-container h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.getReady-container p{
+    width: 75%;
+    margin: 10px auto;
+}
+.getReady-container button {
+    width: 25%;
+    
+}

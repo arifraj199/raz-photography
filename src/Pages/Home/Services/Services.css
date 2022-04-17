@@ -1,4 +1,6 @@
-
+.services-title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 .service-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);

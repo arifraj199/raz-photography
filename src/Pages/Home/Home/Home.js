@@ -1,4 +1,5 @@
 import React from 'react';
+import GetReady from '../GetReady/GetReady';
 import Portfolio from '../Portfolio/Portfolio';
 import Services from '../Services/Services';
 import './Home.css';
@@ -14,6 +15,7 @@ const Home = () => {
             </div>
             <Services></Services>
             <Portfolio></Portfolio>
+            <GetReady></GetReady>
         </div>
     );
 };
