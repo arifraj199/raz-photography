@@ -1,4 +1,5 @@
 import React from 'react';
+import Portfolio from '../Portfolio/Portfolio';
 import Services from '../Services/Services';
 import './Home.css';
 
@@ -7,11 +8,12 @@ const Home = () => {
         <div className='text-center'>
             <div className="img-container text-white">
                 {/* <img width={'100%'} height={'600px'} src="https://i.ibb.co/WzngJdb/wedding-couple-france.png" alt="" /> */}
-                <h2> Take Best Weeding Photography</h2>
+                <h2> Take Best Wedding Photography</h2>
                 <p>Provide Best Service</p>
                 <button className='btn btn-primary'>Know More</button>
             </div>
             <Services></Services>
+            <Portfolio></Portfolio>
         </div>
     );
 };
