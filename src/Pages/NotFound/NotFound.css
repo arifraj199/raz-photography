@@ -1,0 +1,15 @@
+.not-found{
+    width: 50%;
+    margin: 0 auto;
+}
+.not-found img{
+    width: 100%;
+}
+
+/* Responsive for Mobile Device */
+@media only screen and (max-width:688px){
+    .not-found{
+        width: 100%;
+        margin: 10px auto;
+    }
+}
