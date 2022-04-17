@@ -1,6 +1,4 @@
 import React from "react";
-import { Accordion } from "react-bootstrap";
-import Footer from "../Shared/Footer/Footer";
 import "./Blog.css";
 
 const Blog = () => {

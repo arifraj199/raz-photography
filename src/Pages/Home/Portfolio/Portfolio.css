@@ -1,5 +1,5 @@
 .portfolio-container{
-    background-color: rgb(165, 164, 159);
+    background-color: rgb(238, 237, 232);
     margin-top: 50px;
     padding-top: 50px;
     padding-bottom: 80px;
@@ -15,7 +15,7 @@
     margin: 40px 60px;
 }
 .img-portfolio {
-    background-color: #f9efef;
+    background-color: #fefefe;
     padding: 10px;
     border-radius: 10px;
 }

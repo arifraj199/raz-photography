@@ -11,8 +11,8 @@ const Home = () => {
         <div className='text-center'>
             <div className="img-container text-white">
                 <h2> Take Best Wedding Photography</h2>
-                <p>Provide Best Service</p>
-                <button onClick={()=> navigate('/about')} className='btn btn-primary'>Know More</button>
+                <p>Capture your memorable moment with best photography.I will give you best output and scenario which give you pleasure and trust in my work. </p>
+                <button onClick={()=> navigate('/about')} className='btn btn-outline-primary'>Know More</button>
             </div>
             <Services></Services>
             <Portfolio></Portfolio>

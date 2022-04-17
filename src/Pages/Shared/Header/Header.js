@@ -12,16 +12,14 @@ const Header = () => {
     signOut(auth);
   };
   return (
-    <div>
-      <nav>
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar sticky="top" className="" collapseOnSelect expand="lg" bg="dark" variant="dark">
           <Container>
             <Navbar.Brand as={Link} to="/">
-              ENGROSSING PHOTOGRAPHY
+              <span className="fw-bold fs-3"><span className="text-success">RAZ</span> Photography</span>
               </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
-              <Nav className="ms-auto">
+              <Nav className="ms-auto fw-bold">
                 <Nav.Link href="home#services">Services</Nav.Link>
                 <Nav.Link as={Link} to="/blog">
                   Blog
@@ -38,8 +36,6 @@ const Header = () => {
             </Navbar.Collapse>
           </Container>
         </Navbar>
-      </nav>
-    </div>
   );
 };
 

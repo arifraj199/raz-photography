@@ -1,5 +1,5 @@
 .img-container{
-    background-image: url("https://i.ibb.co/z4YLGFj/wedding-archway-backyard-happy-wedding-couple-outdoors-before-wedding-ceremony-1.png");
+    background-image: url("https://i.ibb.co/Dfz42Dp/wedding-archway-backyard-happy-wedding-couple-outdoors-before-wedding-ceremony-1-2.png");
     /* background-image: url("https://i.ibb.co/WzngJdb/wedding-couple-france.png"); */
     background-size: cover;
     background-position: center;
@@ -9,14 +9,44 @@
 .img-container h2{
     padding-top: 400px;
     padding-left: 50px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.img-container p{
+    width: 40%;
+    margin: 10px auto;
+}
+
+.img-container button{
+    width: 12%;
+    color: white;
+    border: 3px solid rgb(178, 167, 167);
+    font-size: 20px;
+    font-weight: 700;
 }
 
 
 /* Responsive for Mobile Device */
 @media only screen and (max-width:688px) {
     .img-container h2{
-        font-size: 20px;
+        padding-top: 360px;
+        
+    }
+    .img-container h2{
+        font-size: 30px;
         padding-left: 10px;
+        
+    }
+    .img-container p{
+        width: 100%;
+        padding: 10px;
+        margin: 5px auto;
+        font-size: 14px;
+    }
+    .img-container button{
+        width: 35%;
+        font-size: 15px;
     }
 }
