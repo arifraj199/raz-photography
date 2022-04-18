@@ -1,26 +1,51 @@
 [
     {
       "id": "625b07e737fc24be680426db",
-      "price": "$200",
-      "picture": "https://i.ibb.co/H7k3wNw/pexels-miguel-padri-n-1061142.jpg",
-      "description": "5 Hours of Coverage.400+ Edited Images.Digital Image Download.Print Release.",
-      "name": "Collection One"
+      "price": "$250.50",
+      "picture": "https://i.ibb.co/Wg9hb6F/pexels-the-shaan-photography-11762791.jpg",
+      "description": "No wedding or couple is the same and here we consider your images must reflect that. We take a personal approach to acknowledging who you are together.",
+      "name": "WEDDING PHOTOGRAPHY"
     },
     {
       "id": "625b07e72263f7ab1653cbc5",
-      "price": "$400",
-      "picture": "https://i.ibb.co/wBVKVSp/pexels-miguel-padri-n-1061141.jpg",
-      "description": "10 Hours of Coverage.800+ Edited Images.Online Gallery.Digital Image Download.Engagement Session",
-      "name": "Collection Two"
+      "price": "$419.99",
+      "picture": "https://i.ibb.co/c1v511Z/pexels-jonathan-borba-3397026.jpg",
+      "description": "If you desire to re-live your wedding day forever more, then consider hiring our wedding Cinematography specialist to film your day from start to finish.",
+      "name": "WEDDING CINEMATOGRAPHY"
     },
     {
       "id": "625b07e79b2c359c098ac3fa",
-      "price": "$600",
-      "picture": "https://i.ibb.co/PQLZkcm/pexels-miguel-padri-n-1061140.jpg",
-      "description": "12 Hours of Coverage.800+ Edited Images.Online Gallery.Digital Image Download.Engagement.12x12 30-Page Album",
-      "name": "Collection Three"
+      "price": "$325.59",
+      "picture": "https://i.ibb.co/TRTR3jZ/pexels-jonathan-borba-3292701.jpg",
+      "description": "Candid wedding photography is a catchword within the wedding photography domain. One and all needs candid, natural shots which portray the actual big day.",
+      "name":"CANDID WEDDING PHOTOGRAPHY"
+    },
+    {
+      "id": "625b07e79b2c359c098ac3fa",
+      "price": "$380.59",
+      "picture": "https://i.ibb.co/T8tfGPs/pexels-pixabay-265722.jpg",
+      "description": "If you want something unique from traditional wedding photography, then drone wedding photography can be your best bet. Making the most of advanced technology.",
+      "name":"DRONE WEDDING PHOTOGRAPHY"
+    },
+    {
+      "id": "625b07e79b2c359c098ac3fa",
+      "price": "$530.99",
+      "picture": "https://i.ibb.co/db488J8/pexels-agung-pandit-wiguna-1185244.jpg",
+      "description": "Looking for the best Wedding Videography Sydney? Contact us now. We are regarded as one of Sydney's best wedding videography company.",
+      "name":"WEDDING VIDEOGRAPHY"
     }
   ]
+
+
+
+  
+
+
+
+
+
+
+
 
 
   
