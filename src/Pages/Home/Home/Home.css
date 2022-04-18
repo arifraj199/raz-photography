@@ -1,5 +1,5 @@
 .img-container{
-    background-image: url("https://i.ibb.co/Dfz42Dp/wedding-archway-backyard-happy-wedding-couple-outdoors-before-wedding-ceremony-1-2.png");
+    background-image: url("https://i.ibb.co/vBCvstd/wedding-archway-backyard-happy-wedding-couple-outdoors-before-wedding-ceremony-1-2.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -29,6 +29,10 @@
 
 /* Responsive for Mobile Device */
 @media only screen and (max-width:688px) {
+    .img-container{
+        height: 90vh;
+    }
+
     .img-container h2{
         padding-top: 360px;
         
