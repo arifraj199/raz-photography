@@ -25,8 +25,32 @@
 }
 .about-title h3{
     font-size: 35px;
+    margin-bottom: 20px;
 }
 .about-title p{
     font-size: 25px;
     font-family: 'Times New Roman', Times, serif;
+}
+
+/* Responsive for Mobile Device */
+@media only screen and (max-width: 688px){
+    .about{
+        display: block;
+        width: 350px;
+    } 
+    .about img{
+        width: 100%;
+        border-radius: 10px;
+    }
+    .about-img{
+        padding: 15px;
+        width: 350px;
+    }
+    .about-title{
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+    .about-title h3{
+        margin-bottom: 30px;
+    }
 }

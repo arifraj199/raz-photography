@@ -7,8 +7,9 @@ const Portfolio = () => {
       <h2>Recent Wedding Click</h2>
       <div className="portfolio">
         <div className="img-portfolio">
+         
           <img
-            src="https://i.ibb.co/jGrMd3D/pexels-asad-photo-maldives-169198.png"
+            src="https://i.ibb.co/sbxQy18/pexels-studio-negarin-3650446.jpg"
             alt=""
           />
         </div>
@@ -28,8 +29,8 @@ const Portfolio = () => {
         </div>
 
         <div className="img-portfolio">
-          <img
-            src="https://i.ibb.co/sbxQy18/pexels-studio-negarin-3650446.jpg"
+        <img
+            src="https://i.ibb.co/jGrMd3D/pexels-asad-photo-maldives-169198.png"
             alt=""
           />
         </div>

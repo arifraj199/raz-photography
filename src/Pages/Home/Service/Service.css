@@ -5,7 +5,10 @@
 }
 .service img{
     width: 100%;
-    height: 340px;
+    height: 320px;
+}
+.service h4{
+    font-size: 22px;
 }
 .service button{
     width: 75%;

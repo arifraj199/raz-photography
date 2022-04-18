@@ -113,7 +113,7 @@ const Login = () => {
         </div>
       </div>
 
-      <div className="google-container w-100">
+      <div className="google-container">
         <button onClick={()=> signInWithGoogle()} className="link-container">
             <img src={img} alt="" />
             <p className="mt-3">Continue With Google</p>
